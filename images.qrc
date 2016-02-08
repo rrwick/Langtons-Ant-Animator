@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/load64.png</file>
+        <file>images/save64.png</file>
+        <file>images/settings64.png</file>
+        <file>images/colorsandstates64.png</file>
+        <file>images/renderred64.png</file>
+        <file>images/back64.png</file>
+        <file>images/renderhdd64.png</file>
+        <file>images/ant64.png</file>
+        <file>images/stop64.png</file>
+        <file>images/stepred64.png</file>
+        <file>images/stophdd64.png</file>
+        <file>images/searchall64.png</file>
+        <file>images/searchrandom64.png</file>
+    </qresource>
+</RCC>
