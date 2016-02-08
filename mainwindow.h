@@ -1,12 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QtWidgets/QMainWindow>
+#include <QMainWindow>
 #include <random>
 #include <ctime>
-#include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QScrollArea>
+#include <QSpacerItem>
+#include <QLabel>
+#include <QScrollArea>
 
 #include "antsettings.h"
 #include "statewidget.h"

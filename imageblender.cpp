@@ -1,5 +1,5 @@
 #include "imageblender.h"
-#include <QtGui>
+#include <QtWidgets>
 
 ImageBlender::ImageBlender(bool * runningFlagP)
 {

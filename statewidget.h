@@ -1,15 +1,13 @@
 #ifndef STATEWIDGET_H
 #define STATEWIDGET_H
 
-#include <QtWidgets/QWidget>
-#include <QtGui>
+#include <QWidget>
+#include <QtWidgets>
 #include "antdirection.h"
 
 namespace Ui {
 class StateWidget;
 }
-
-
 
 class StateWidget : public QWidget
 {

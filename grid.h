@@ -1,7 +1,7 @@
 #ifndef GRID_H
 #define GRID_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 class Grid
 {

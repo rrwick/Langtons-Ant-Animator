@@ -1,7 +1,7 @@
 #ifndef ANTSETTINGS_H
 #define ANTSETTINGS_H
 
-#include <QtGui>
+#include <QtWidgets>
 #include "antdirection.h"
 #include "statewidget.h"
 
