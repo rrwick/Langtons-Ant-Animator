@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //Create and set up the label that will display the grid's image.
     gridLabel = new QLabel(this);
     gridLabel->setPixmap(QPixmap::fromImage( *(displayGrid->gridImage)) );
-    gridLabel->resize(gridLabel->pixmap()->size());
+    gridLabel->resize(gridLabel->pixmap().size());
     gridLabel->setFrameStyle(QFrame::Box | QFrame::Plain);
     gridLabel->setLineWidth(0);
 
@@ -657,7 +657,7 @@ void MainWindow::redrawImage()
 
     //Make the redrawn image visible on the label.
     gridLabel->setPixmap(QPixmap::fromImage( *(displayGrid->gridImage)) );
-    gridLabel->resize(gridLabel->pixmap()->size());
+    gridLabel->resize(gridLabel->pixmap().size());
 }
 
 
@@ -706,7 +706,7 @@ void MainWindow::imageSizeChanged()
 
     //Make the cleared image visible on the label.
     gridLabel->setPixmap(QPixmap::fromImage( *(displayGrid->gridImage)) );
-    gridLabel->resize(gridLabel->pixmap()->size());
+    gridLabel->resize(gridLabel->pixmap().size());
 
 
 }

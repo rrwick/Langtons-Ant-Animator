@@ -66,31 +66,31 @@ void AntSettings::saveToFile(QString fileName, StateWidget * stateArray)
         //These settings are from the settings docking widget (everything but colors and directions of states)
         //format: setting name=setting value
         //example: number of states=2
-        outputStream << "number of states" << delimiter << stateCount << endl;
-        outputStream << "first state to randomize" << delimiter << firstRandom << endl;
-        outputStream << "last state to randomize" << delimiter << lastRandom << endl;
-        outputStream << "pixel width" << delimiter << pixelWidth << endl;
-        outputStream << "pixel height" << delimiter << pixelHeight << endl;
-        outputStream << "cell size" << delimiter << cellSize << endl;
-        outputStream << "grid buffer" << delimiter << gridBuffer << endl;
-        outputStream << "starting direction" << delimiter << startingDirection << endl;
-        outputStream << "starting column" << delimiter << startingColumn << endl;
-        outputStream << "starting row" << delimiter << startingRow << endl;
-        outputStream << "show counter" << delimiter << showCounter << endl;
-        outputStream << "counter location" << delimiter << counterLocation << endl;
-        outputStream << "show rules" << delimiter << showRules << endl;
-        outputStream << "rules location" << delimiter << rulesLocation << endl;
-        outputStream << "counter font" << delimiter << counterFont.toString() << endl;
-        outputStream << "show ant color" << delimiter << showAntColor << endl;
-        outputStream << "ant color" << delimiter << antColor.red() << "," << antColor.green() << "," << antColor.blue() << endl;
-        outputStream << "steps per update" << delimiter << stepsPerUpdate << endl;
-        outputStream << "delay per update" << delimiter << delayPerUpdate << endl;
-        outputStream << "steps per sample" << delimiter << stepsPerSample << endl;
-        outputStream << "samples per frame" << delimiter << samplesPerFrame << endl;
-        outputStream << "frame count" << delimiter << frameCount << endl;
-        outputStream << "save zero frame" << delimiter << saveZeroFrame << endl;
-        outputStream << "search step count" << delimiter << searchSteps << endl;
-        outputStream << "include back" << delimiter << includeBack << endl;
+        outputStream << "number of states" << delimiter << stateCount << Qt::endl;
+        outputStream << "first state to randomize" << delimiter << firstRandom << Qt::endl;
+        outputStream << "last state to randomize" << delimiter << lastRandom << Qt::endl;
+        outputStream << "pixel width" << delimiter << pixelWidth << Qt::endl;
+        outputStream << "pixel height" << delimiter << pixelHeight << Qt::endl;
+        outputStream << "cell size" << delimiter << cellSize << Qt::endl;
+        outputStream << "grid buffer" << delimiter << gridBuffer << Qt::endl;
+        outputStream << "starting direction" << delimiter << startingDirection << Qt::endl;
+        outputStream << "starting column" << delimiter << startingColumn << Qt::endl;
+        outputStream << "starting row" << delimiter << startingRow << Qt::endl;
+        outputStream << "show counter" << delimiter << showCounter << Qt::endl;
+        outputStream << "counter location" << delimiter << counterLocation << Qt::endl;
+        outputStream << "show rules" << delimiter << showRules << Qt::endl;
+        outputStream << "rules location" << delimiter << rulesLocation << Qt::endl;
+        outputStream << "counter font" << delimiter << counterFont.toString() << Qt::endl;
+        outputStream << "show ant color" << delimiter << showAntColor << Qt::endl;
+        outputStream << "ant color" << delimiter << antColor.red() << "," << antColor.green() << "," << antColor.blue() << Qt::endl;
+        outputStream << "steps per update" << delimiter << stepsPerUpdate << Qt::endl;
+        outputStream << "delay per update" << delimiter << delayPerUpdate << Qt::endl;
+        outputStream << "steps per sample" << delimiter << stepsPerSample << Qt::endl;
+        outputStream << "samples per frame" << delimiter << samplesPerFrame << Qt::endl;
+        outputStream << "frame count" << delimiter << frameCount << Qt::endl;
+        outputStream << "save zero frame" << delimiter << saveZeroFrame << Qt::endl;
+        outputStream << "search step count" << delimiter << searchSteps << Qt::endl;
+        outputStream << "include back" << delimiter << includeBack << Qt::endl;
 
         //This code stores the values in the state widgets
         //format: stateNumber=direction=red,green,blue
@@ -112,7 +112,7 @@ void AntSettings::saveToFile(QString fileName, StateWidget * stateArray)
             //output the state color
             outputStream << stateArray[i].color.red() << ",";
             outputStream << stateArray[i].color.green() << ",";
-            outputStream << stateArray[i].color.blue() << endl;
+            outputStream << stateArray[i].color.blue() << Qt::endl;
         }
 
 
